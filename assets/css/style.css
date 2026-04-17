@@ -4285,6 +4285,10 @@ hero-btn {
   }
 }
 
+.brand-area {
+    padding-top: 50px; /* Adjust the value as needed */
+}
+
 /* line 3, C:/Users/HP/Desktop/264.Business_HTML/HTML/assets/scss/_wantTowork.scss */
 .wantToWork-area .wantToWork-caption h2 {
   color: #fff;
