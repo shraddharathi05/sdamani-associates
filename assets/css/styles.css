@@ -17,9 +17,8 @@
     box-sizing: border-box;
 }
 
-html,
+/* General Styles */
 body {
-    overflow-x: hidden; /* Prevent horizontal scroll on body */
     font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
@@ -295,6 +294,7 @@ body {
 .testimonial-slider {
     width: 100%;
     padding-bottom: 50px; /* Space for pagination */
+    overflow: hidden; /* Ensure content doesn't overflow horizontally */
 }
 
 .swiper-pagination-bullet {
@@ -311,11 +311,6 @@ body {
     color: var(--white);
 }
 
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
 
 .testimonial-card {
     background: rgba(255, 255, 255, 0.1);
@@ -482,6 +477,16 @@ body {
     }
     .contact-grid {
         padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px; /* Adjust container padding for very small screens */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
     }
 }
 
